@@ -35,17 +35,25 @@ const Flex = styled.div`
   align-items: center;
 `;
 
+const Link = styled.a`
+  transition: 0.3s color;
+  &:hover i{
+    color: ${props => props.theme.green};
+    cursor: pointer;
+  }
+`;
+
 
 const Footer = props => (
   <FooterBackground>
     <Wrapper>
       <Author><GreenText>Mark</GreenText> Wilkins &copy; 2019</Author>
-      <Logo />
+      <a href="/"><Logo /></a>
       <Flex>
-        <SocialIcon icon="twitter" />
-        <SocialIcon icon="github" />
-        <SocialIcon icon="linkedin" />
-        <SocialIcon icon="envelope" />
+        <Link href="https://twitter.com/MarkWilkinsWeb" ><SocialIcon icon="twitter" /></Link>
+        <Link href="https://github.com/mwilkins91" ><SocialIcon icon="github" /></Link>
+        <Link href="https://www.linkedin.com/in/markwilkinsweb/" ><SocialIcon icon="linkedin" /></Link>
+        <Link href="mailto:contactme@markwilkins.co?Subject=Hello!" ><SocialIcon icon="envelope" /></Link>
       </Flex>
     </Wrapper>
   </FooterBackground>

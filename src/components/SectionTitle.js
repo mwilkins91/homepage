@@ -2,9 +2,30 @@ import React from 'react';
 import styled from 'styled-components';
 import PropTypes from "prop-types"
 
+const getTitleColor = props => {
+  if (props.backgroundColor === "white") {
+    return props.theme.green;
+  } else if (props.backgroundColor === "black") {
+    return "white";
+  } else if (props.backgroundColor === "white") {
+    return "white";
+  }
+}
+
+
+const getSubtitleColor = props => {
+  if (props.backgroundColor === "white") {
+    return props.theme.black;
+  } else if (props.backgroundColor === "black") {
+    return "white";
+  } else if (props.backgroundColor === "white") {
+    return props.theme.black;
+  }
+}
+
 const Title = styled.h3`
-  margin-top: 40px;
-  color: ${props => props.theme.green};
+  padding-top: 40px;
+  color: ${getTitleColor};
   text-transform: uppercase;
   text-align: center;
   font-family: ${props => props.theme.headerFont};
@@ -12,17 +33,17 @@ const Title = styled.h3`
 `;
 
 const Subtitle = styled.p`
-    color: ${props => props.theme.black};
+    color: ${getSubtitleColor};
     text-align: center;
     font-family: ${props => props.theme.contentFont};
     font-size: 2.5rem;
 `;
 
 
-const SectionTitle = ({title, subtitle}) => (
+const SectionTitle = ({title, subtitle, backgroundColor = "white"}) => (
   <>
-  {title ? <Title>{title}</Title> : null}
-  {subtitle ? <Subtitle>{subtitle}</Subtitle> : null}
+  {title ? <Title backgroundColor={backgroundColor}>{title}</Title> : null}
+  {subtitle ? <Subtitle backgroundColor={backgroundColor}>{subtitle}</Subtitle> : null}
   </>
 )
  

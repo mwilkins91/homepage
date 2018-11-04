@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'Mark Wilkins | Fullstack Development',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -36,5 +36,14 @@ module.exports = {
     },
     'gatsby-plugin-offline',
     'gatsby-plugin-styled-components',
+    {
+      resolve: `gatsby-plugin-favicon`,
+      options: {
+        logo: path.join(__dirname, '/src/images/logo.svg'),
+        background: '#fff',
+        theme_color: '#fff',
+        display: 'standalone',
+      }
+    }
   ],
 };
