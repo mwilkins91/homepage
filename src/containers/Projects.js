@@ -6,6 +6,7 @@ import Project from '../components/Project';
 
 const ProjectsSection = styled.section`
   background: ${props => props.theme.black};
+  padding: 50px 0;
   * {
     color: white;
   }
@@ -16,7 +17,12 @@ const Wrapper = styled.div`
   margin: 0 auto;
 `
 
-const Profile = (num) => (
+const Flex = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
+
+const Projects = (num) => (
   <ProjectsSection id="projects">
   <Wrapper>
       <SectionTitle
@@ -30,7 +36,21 @@ const Profile = (num) => (
             allProjectsJson {
               edges {
                 node {
+                  id
                   title
+                  links {
+                    demo
+                    git
+                  }
+                  description
+                  image {
+                    id
+                    childImageSharp {
+                      fluid(maxWidth: 250, maxHeight: 300) {
+                        src
+                      }
+                    }
+                  }
                 }
               }
             }
@@ -39,7 +59,9 @@ const Profile = (num) => (
         render={data => {
           const projects = data.allProjectsJson.edges;
           return (
-            projects.map(({node}) => <Project {...node} />)
+            <Flex>
+              {projects.map(({node}) => <Project key={`project-${node.id}`} {...node} />)}
+            </Flex>  
           )
         }}
       />
@@ -47,4 +69,4 @@ const Profile = (num) => (
   </ProjectsSection>
 );
 
-export default Profile;
+export default Projects;

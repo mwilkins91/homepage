@@ -7,6 +7,7 @@ import ProfileDescription from '../components/ProfileDescription';
 const ProfileSection = styled.section`
   max-width: ${props => props.theme.wrapper};
   margin: 0 auto;
+  padding: 0 0 50px 0;
 `;
 
 const FlexContainer = styled.div`

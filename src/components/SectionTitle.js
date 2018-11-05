@@ -30,6 +30,7 @@ const Title = styled.h3`
   text-align: center;
   font-family: ${props => props.theme.headerFont};
   font-size: 4.2rem;
+  line-height: normal;
 `;
 
 const Subtitle = styled.p`
@@ -37,6 +38,7 @@ const Subtitle = styled.p`
     text-align: center;
     font-family: ${props => props.theme.contentFont};
     font-size: 2.5rem;
+    line-height: normal;
 `;
 
 
