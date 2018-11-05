@@ -39,6 +39,7 @@ const Subtitle = styled.p`
     font-family: ${props => props.theme.contentFont};
     font-size: 2.5rem;
     line-height: normal;
+    margin-bottom: 20px;
 `;
 
 

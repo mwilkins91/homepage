@@ -40,6 +40,16 @@ const Icon = styled.i`
   margin: 0 10px;
 `;
 
+const Link = styled.a`
+  &, i {
+   transition: 0.3s color;
+  }
+  
+  &:hover, &:hover i {
+    color: ${props => props.theme.green}
+  }
+`;
+
 const Project = ({ title, links, image, description }) => {
   const imgSrc = image.childImageSharp.fluid.src;
   return (
@@ -52,12 +62,12 @@ const Project = ({ title, links, image, description }) => {
       />
     </Spacer>
     <div>
-      <ProjectTitle><a href={links.demo}>{title}</a></ProjectTitle>
+      <ProjectTitle><Link href={links.demo}>{title}</Link></ProjectTitle>
       <ProjectDescription>{description}</ProjectDescription>
     </div>
     <Spacer>
-      <a href={links.demo}><Icon className="fas fa-mouse-pointer"></Icon></a>
-      <a href={links.git}><Icon className="fab fa-github"></Icon></a>
+      <Link href={links.demo}><Icon className="fas fa-mouse-pointer"></Icon></Link>
+      <Link href={links.git}><Icon className="fab fa-github"></Icon></Link>
     </Spacer>
   </VerticalColumn>
 )

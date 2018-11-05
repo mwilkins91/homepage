@@ -14,7 +14,7 @@ const Wrapper = styled.div`
   margin: 0 auto;
   display: flex;
   font-family: ${props => props.theme.headerFont};
-  justify-content: space-around;
+  justify-content: space-between;
 `;
 
 const Author = styled.p`

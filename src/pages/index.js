@@ -4,6 +4,7 @@ import Layout from '../containers/layout';
 import Heading from '../components/Heading';
 import Profile from '../containers/Profile';
 import Projects from '../containers/Projects';
+import ContactMe from '../containers/ContactMe';
 import theme from '../util/theme';
 
 
@@ -13,6 +14,7 @@ const IndexPage = () => (
       <Heading color="green">Hello</Heading>
       <Profile />
       <Projects />
+      <ContactMe />
     </Layout>
   </ThemeProvider>
 );
