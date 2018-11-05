@@ -13,7 +13,7 @@ const ProfileSection = styled.section`
 const FlexContainer = styled.div`
   display: flex;
   margin-top: 30px;
-`
+`;
 
 const Profile = () => (
   <ProfileSection id="profile">

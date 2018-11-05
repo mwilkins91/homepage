@@ -7,7 +7,7 @@ import SocialIcon from '../elements/SocalIcon';
 const FooterBackground = styled.footer`
   background: ${props => props.theme.black};
   padding: 10px 0;
-`
+`;
 
 const Wrapper = styled.div`
   max-width: ${props => props.theme.wrapper};
@@ -57,6 +57,6 @@ const Footer = props => (
       </Flex>
     </Wrapper>
   </FooterBackground>
-)
+);
 
 export default Footer;

@@ -6,5 +6,5 @@ const Header = ({ siteTitle }) => (
     <Nav />
   </header>
 );
- 
+
 export default Header;

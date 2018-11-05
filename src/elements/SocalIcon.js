@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import PropTypes from "prop-types"
+import PropTypes from 'prop-types';
 
 const Icon = styled.i`
   background: white;
@@ -26,11 +26,11 @@ const Icon = styled.i`
 `;
 
 const SocialIcon = ({ icon }) => (
-  <Icon className={`${icon === "envelope" ? "fas" : "fab"} fa-${icon}`}></Icon>
+  <Icon className={`${icon === 'envelope' ? 'fas' : 'fab'} fa-${icon}`} />
 );
 
 SocialIcon.propTypes = {
- icon: PropTypes.string
+  icon: PropTypes.string.isRequired
 };
 
 export default SocialIcon;

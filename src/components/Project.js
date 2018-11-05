@@ -53,24 +53,24 @@ const Link = styled.a`
 const Project = ({ title, links, image, description }) => {
   const imgSrc = image.childImageSharp.fluid.src;
   return (
-  <VerticalColumn> 
-    <Spacer>
-      <HexImg 
-        style={{stroke: ''}}
-        backgroundImage={imgSrc}
-        href={links.demo}
-      />
-    </Spacer>
-    <div>
-      <ProjectTitle><Link href={links.demo}>{title}</Link></ProjectTitle>
-      <ProjectDescription>{description}</ProjectDescription>
-    </div>
-    <Spacer>
-      <Link href={links.demo}><Icon className="fas fa-mouse-pointer"></Icon></Link>
-      <Link href={links.git}><Icon className="fab fa-github"></Icon></Link>
-    </Spacer>
-  </VerticalColumn>
-)
-  }
+    <VerticalColumn>
+      <Spacer>
+        <HexImg
+          style={{ stroke: '' }}
+          backgroundImage={imgSrc}
+          href={links.demo}
+        />
+      </Spacer>
+      <div>
+        <ProjectTitle><Link href={links.demo}>{title}</Link></ProjectTitle>
+        <ProjectDescription>{description}</ProjectDescription>
+      </div>
+      <Spacer>
+        <Link href={links.demo}><Icon className="fas fa-mouse-pointer" /></Link>
+        <Link href={links.git}><Icon className="fab fa-github" /></Link>
+      </Spacer>
+    </VerticalColumn>
+  );
+};
 
 export default Project;

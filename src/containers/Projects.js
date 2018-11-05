@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import {StaticQuery} from 'gatsby';
+import { StaticQuery, graphql } from 'gatsby';
 import SectionTitle from '../components/SectionTitle';
 import Project from '../components/Project';
 
@@ -9,22 +9,22 @@ const ProjectsSection = styled.section`
   padding: 50px 0;
   * {
     color: white;
-  }
+  } 
 `;
 
 const Wrapper = styled.div`
   max-width: ${props => props.theme.wrapper};
   margin: 0 auto;
-`
+`;
 
 const Flex = styled.div`
   display: flex;
   justify-content: space-between;
 `;
 
-const Projects = (num) => (
+const Projects = () => (
   <ProjectsSection id="projects">
-  <Wrapper>
+    <Wrapper>
       <SectionTitle
         title="Personal Projects"
         subtitle="Some of my favorites"
@@ -60,9 +60,9 @@ const Projects = (num) => (
           const projects = data.allProjectsJson.edges;
           return (
             <Flex>
-              {projects.map(({node}) => <Project key={`project-${node.id}`} {...node} />)}
-            </Flex>  
-          )
+              {projects.map(({ node }) => <Project key={`project-${node.id}`} {...node} />)}
+            </Flex>
+          );
         }}
       />
     </Wrapper>

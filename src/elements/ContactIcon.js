@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 const Container = styled.div`
     font-weight: bolder;
@@ -29,11 +30,17 @@ const Link = styled.a`
 
 `;
 
-const ContactIcon = ({icon, link, text}) => (
+const ContactIcon = ({ icon, link, text }) => (
   <Container>
-    <Icon className={icon}/>
+    <Icon className={icon} />
     <Link href={link}>{text}</Link>
   </Container>
-)
+);
+
+ContactIcon.propTypes = {
+  icon: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+};
 
 export default ContactIcon;

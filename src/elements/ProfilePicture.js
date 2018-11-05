@@ -1,5 +1,5 @@
-import React from 'react'
-import { StaticQuery, graphql } from 'gatsby'
+import React from 'react';
+import { StaticQuery, graphql } from 'gatsby';
 import Hexagon from 'react-hexagon';
 import styled from 'styled-components';
 import theme from '../util/theme';
@@ -14,7 +14,7 @@ query {
     }
   }
 }
-`
+`;
 
 const HexImg = styled(Hexagon)`
   min-width: 250px;
@@ -24,18 +24,18 @@ const HexImg = styled(Hexagon)`
   image {
     transform: translateX(-40px);
   }
-`
+`;
 
-const ProfilePicture = props => (
+const ProfilePicture = () => (
   <StaticQuery
     query={query}
     render={data => (
-      <HexImg 
-        backgroundImage={data.profilePicture.childImageSharp.fluid.src} 
-        style={{stroke: theme.green}}
+      <HexImg
+        backgroundImage={data.profilePicture.childImageSharp.fluid.src}
+        style={{ stroke: theme.green }}
         backgroundScale={1.1}
-        />
+      />
     )}
   />
-)
-export default ProfilePicture
+);
+export default ProfilePicture;

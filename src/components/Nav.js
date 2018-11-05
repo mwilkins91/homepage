@@ -9,19 +9,19 @@ const StyledNav = styled.nav`
 `;
 
 const activeStyles = {
-  color: "white",
-  background: "#0b9444"
+  color: 'white',
+  background: '#0b9444'
 };
 
 const Nav = () => (
   <StyledNav>
-    <NavLink 
+    <NavLink
       to="/"
       activeStyle={activeStyles}
     >
       Home
     </NavLink>
-    <NavLink 
+    <NavLink
       to="/resume"
       activeStyle={activeStyles}
     >
@@ -30,4 +30,4 @@ const Nav = () => (
   </StyledNav>
 );
 
-export default Nav; 
+export default Nav;

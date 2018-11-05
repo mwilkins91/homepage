@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import PropTypes from "prop-types"
+import PropTypes from 'prop-types';
 
 const HeadingBackground = styled.div`
-  background: ${props => props.color === "black" ? props.theme.black : props.theme.green};
-`
+  background: ${props => props.color === 'black' ? props.theme.black : props.theme.green};
+`;
 const H2 = styled.h2`
     color: white;
     font-size: 4.2rem;
@@ -15,14 +15,15 @@ const H2 = styled.h2`
     text-align: center;
 `;
 
-const Heading = ({color, children}) => (
+const Heading = ({ color, children }) => (
   <HeadingBackground color={color}>
     <H2>{children}</H2>
   </HeadingBackground>
-)
- 
+);
+
 Heading.propTypes = {
-  color: PropTypes.oneOf(['green', 'black'])
-}
+  color: PropTypes.oneOf(['green', 'black']),
+  children: PropTypes.element.isRequired
+};
 
 export default Heading;

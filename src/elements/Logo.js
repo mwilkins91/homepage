@@ -2,7 +2,7 @@ import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
 
-const size = "80px";
+const size = '80px';
 
 const WhiteCircleBackground = styled.div`
   position: relative;
@@ -24,7 +24,7 @@ const WhiteCircleBackground = styled.div`
     width: ${size};
     height: ${size};
   }
-`
+`;
 
 const Logo = () => (
   <StaticQuery
