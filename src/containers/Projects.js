@@ -45,8 +45,9 @@ const Projects = () => (
                   description
                   image {
                     id
+                    absolutePath
                     childImageSharp {
-                      fluid(maxWidth: 250, maxHeight: 300) {
+                      fluid(cropFocus: CENTER, maxWidth: 250, maxHeight: 300) {
                         src
                       }
                     }

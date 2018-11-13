@@ -23,7 +23,7 @@ const Heading = ({ color, children }) => (
 
 Heading.propTypes = {
   color: PropTypes.oneOf(['green', 'black']),
-  children: PropTypes.element.isRequired
+  children: PropTypes.oneOfType([PropTypes.string, PropTypes.element]).isRequired
 };
 
 export default Heading;

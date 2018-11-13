@@ -1,29 +1,29 @@
 [
   {
-    "title": "Blorp",
-    "image": "../src/images/test.png",
+    "title": "Phaser.io Game",
+    "image": "../src/images/phaser.png",
     "links": {
-      "demo": "https://www.google.ca",
-      "git": "https://www.google.ca"
+      "demo": "https://www.markwilkins.co/phaserGame",
+      "git": "https://github.com/mwilkins91/PhaserSHMUP"
     },
-    "description": "Some text! Qui ex sit labore dolor. Proident non qui non occaecat amet. Ex fugiat excepteur labore ex tempor. Consectetur sunt do ad qui et amet."
+    "description": "Utilizing the Phaser.io JavaScript library, I have created a fully functional \"SHMUP\" style game, that increases with difficulty over time. Try to last as long as you can!"
   },
   {
-    "title": "Blip",
-    "image": "../src/images/test.png",
+    "title": "Api Project",
+    "image": "../src/images/whereDoIFitIn.jpg",
     "links": {
-      "demo": "https://www.google.ca",
-      "git": "https://www.google.ca"
+      "demo": "http://markwilkins.co/projectFour",
+      "git": "https://github.com/mwilkins91/whereDoIFitInApp"
     },
-    "description": "Some text! Officia do ut et culpa. Enim fugiat dolore officia culpa aute veniam aliqua sint. Consequat nulla nisi eiusmod enim sit laboris pariatur id magna. Elit et enim do do id exercitation culpa duis duis ut aute ad id. Eu eu adipisicing eu voluptate ut laborum nulla incididunt. Nulla dolor do irure dolore ullamco amet sint consectetur ad dolore pariatur non. Ad tempor culpa est ipsum laborum."
+    "description": "Using Javascript, Jquery, Charts.js, HTML, and Sass I have built an application that will acquire statistical information about a user's demographic based on user inputs."
   },
   {
-    "title": "bleep",
-    "image": "../src/images/test.png",
+    "title": "PSD Conversion",
+    "image": "../src/images/mercyHeart.jpg",
     "links": {
-      "demo": "https://www.google.ca",
-      "git": "https://www.google.ca"
+      "demo": "http://markwilkins.co/projectTwo",
+      "git": "https://github.com/mwilkins91/Charity-HY-"
     },
-    "description": "Some text! Magna aliquip deserunt ullamco nulla adipisicing adipisicing reprehenderit ut officia sunt anim Lorem non. Id irure ea anim sint occaecat sint ipsum non exercitation anim. Adipisicing elit proident ad incididunt. Officia sunt ipsum laborum amet deserunt laboris sint excepteur consequat officia dolore mollit."
+    "description": "Using HTML, CSS, Sass, and Javascript, I have perfectly converted this PSD to a single page responsive website."
   }
 ]

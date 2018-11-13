@@ -5,6 +5,11 @@ import styled from 'styled-components';
 const HexImg = styled(Hexagon)`
   min-width: 250px;
   max-height: 350px;
+  image {
+    x: 50%;
+    y: 50%;
+    transform: translate(-50%, -50%);
+  }
 `;
 
 const ProjectTitle = styled.h3`
@@ -51,7 +56,8 @@ const Link = styled.a`
 `;
 
 const Project = ({ title, links, image, description }) => {
-  const imgSrc = image.childImageSharp.fluid.src;
+  const imgSrc = image.childImageSharp ? image.childImageSharp.fluid.src : image.absolutePath;
+ 
   return (
     <VerticalColumn>
       <Spacer>
