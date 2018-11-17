@@ -4,7 +4,10 @@ const theme = {
   grey: '#818181',
   wrapper: '1000px',
   headerFont: '"Montserrat", sans-serif',
-  contentFont: '"Open Sans", sans-serif'
+  contentFont: '"Open Sans", sans-serif',
+  resume: {
+    grey: '#585858'
+  }
 };
 
 export default theme;

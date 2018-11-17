@@ -2,12 +2,15 @@ import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
 
-const size = '80px';
 
-const WhiteCircleBackground = styled.div`
+
+
+const Logo = ({size = "80px"}) => {
+  const WhiteCircleBackground = styled.div`
   position: relative;
   width: ${size};
   height: ${size};
+  margin: 0 auto;
   &:after {
     content: "";
     border-radius: 50%;
@@ -26,20 +29,22 @@ const WhiteCircleBackground = styled.div`
   }
 `;
 
-const Logo = () => (
-  <StaticQuery
-    query={graphql`
-      query {
-        logo: file(relativePath: {eq: "logo.svg"}) {
-          publicURL
+return (
+    <StaticQuery
+      query={graphql`
+        query {
+          logo: file(relativePath: {eq: "logo.svg"}) {
+            publicURL
+          }
         }
-      }
-    `}
-    render={data => (
-      <WhiteCircleBackground>
-        <img src={data.logo.publicURL} alt="M.W. (Mark Wilkins)" />
-      </WhiteCircleBackground>
-    )}
-  />
-);
+      `}
+      render={data => (
+        <WhiteCircleBackground>
+          <img src={data.logo.publicURL} alt="M.W. (Mark Wilkins)" />
+        </WhiteCircleBackground>
+      )}
+    />
+  );
+}
+
 export default Logo;
