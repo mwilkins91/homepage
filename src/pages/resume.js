@@ -7,18 +7,24 @@ import Resume from '../containers/Resume';
 import styled from 'styled-components';
 import Heading from '../components/Heading';
 
-const Flex = styled.div`
+const Wrapper = styled.div`
   display: flex;
+  max-width: ${props => props.theme.wrapper};
+  margin: 0 auto;
+  @media screen and (max-width: 775px) {
+    flex-direction: column;
+  }
 `;
+
 
 const resumePage = () => (
   <ThemeProvider theme={theme}>
     <Layout>
       <Heading>Resume</Heading>
-      <Flex>
+      <Wrapper>
         <ResumeSideBar />
         <Resume />
-      </Flex>
+      </Wrapper>
     </Layout>
   </ThemeProvider>
 );

@@ -8,6 +8,9 @@ const SideBar = styled.aside`
   width: 33.333%;
   background: ${props => props.theme.resume.grey};
   padding: 30px;
+  @media screen and (max-width: 775px) {
+    width: 100%;
+  }
 `;
 
 const SideBarHeading = styled.h3`

@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "author": "Mark Wilkins <contactme@markwilkins.co>",
   "dependencies": {
+    "dayjs": "^1.7.7",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^3.1.0",
     "eslint-config-react": "^1.1.7",

@@ -1,8 +1,8 @@
 [
   {
     "company": "Uberflip",
-    "jobTitle": "Software Developer (Full-stack)",
-    "start": "22-02-2018",
+    "title": "Software Developer (Full-stack)",
+    "start": "2018-02-22",
     "end": "present",
     "description": [
       "Work as part of a scrum team to deliver new features and maintain both the front-end and back-end of Uberflip's main product",
@@ -15,9 +15,9 @@
   },
   {
     "company": "Uberflip",
-    "jobTitle": "Front-End Developer",
-    "start": "13-11-2017",
-    "end": "22-02-2018",
+    "title": "Front-End Developer",
+    "start": "2017-11-13",
+    "end": "2018-02-22",
     "description": [
       "Develop custom in house framework for custom front-end work ontop of the Uberflip platform",
       "Develop, implement, and maintain Webpack based build process for the front-end team",
@@ -28,9 +28,9 @@
   },
   {
     "company": "Uberflip",
-    "jobTitle": "Front-End Developer (Customer Success)",
-    "start": "24-04-2017",
-    "end": "13-11-2017",
+    "title": "Front-End Developer (Customer Success)",
+    "start": "2017-04-24",
+    "end": "2017-11-13",
     "description": [
       "Use CSS/Sass, JavaScript, and jQuery to build customizations and integrations",
       "Translate client mock-ups into pixel perfect web experiences",
@@ -40,8 +40,8 @@
   },
   {
     "company": "Hackeryou College of Technology",
-    "jobTitle": "Lead JavaScript Mentor",
-    "start": "26-9-2018",
+    "title": "Lead JavaScript Mentor",
+    "start": "2018-9-26",
     "end": "present",
     "description": [
       "Work with lead instructor to help students develop an understanding of the JavaScript language, its features, and its history.",
@@ -53,9 +53,9 @@
   },
   {
     "company": "Hackeryou College of Technology",
-    "jobTitle": "Fullstack Mentor",
-    "start": "12-1-2018",
-    "end": "26-9-2018",
+    "title": "Fullstack Mentor",
+    "start": "2018-1-12",
+    "end": "2018-9-26",
     "description": [
       "Work with lead instructor to help students develop an understanding of fullstack web development, utilizing the technologies MongoDB, Mongoose ORM, NodeJs, Express.js, and React",
       "Provided additional resources and one-on-one mentorship outside of lecture"
@@ -63,8 +63,8 @@
   },
   {
     "company": "The Toronto Humane Society",
-    "jobTitle": "Web Application Developer (Freelance / Casual)",
-    "start": "01-05-2017",
+    "title": "Web Application Developer (Freelance / Casual)",
+    "start": "2017-05-01",
     "end": "present",
     "description": [
       "Independently design, develop, and maintain interal application for shelter management using React, MongoDB, NodeJS, and Express.js",
