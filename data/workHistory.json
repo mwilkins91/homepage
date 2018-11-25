@@ -1,11 +1,76 @@
 [
   {
-    "title": "The Toronto Humane Society"
+    "company": "Uberflip",
+    "jobTitle": "Software Developer (Full-stack)",
+    "start": "22-02-2018",
+    "end": "present",
+    "description": [
+      "Work as part of a scrum team to deliver new features and maintain both the front-end and back-end of Uberflip's main product",
+      "Develop and maintain both internal and external Larevel and CakePHP based APIs",
+      "Modernize a PHP-template and jQuery based application to an API powered React application",
+      "Convert existing enterprise scale web application's build process from Gulp to Webpack, implementing code-splitting, babel, bundling, and other modern built features.",
+      "Write migration scripts for both MySQL and MongoDB databases",
+      "Plan, Prototype, and Develop modern Node-js based application"
+    ]
   },
   {
-    "title": "Uberflip"
+    "company": "Uberflip",
+    "jobTitle": "Front-End Developer",
+    "start": "13-11-2017",
+    "end": "22-02-2018",
+    "description": [
+      "Develop custom in house framework for custom front-end work ontop of the Uberflip platform",
+      "Develop, implement, and maintain Webpack based build process for the front-end team",
+      "Create tools to increase efficientcy of front-end team's work, reduce wait times for clients",
+      "Introduce code style guide, linting, and modern JavaScript to front-end team",
+      "Use CSS/Sass, JavaScript, and jQuery to build customizations and integrations"
+    ]
   },
   {
-    "title": "Hackeryou College of Technology"
+    "company": "Uberflip",
+    "jobTitle": "Front-End Developer (Customer Success)",
+    "start": "24-04-2017",
+    "end": "13-11-2017",
+    "description": [
+      "Use CSS/Sass, JavaScript, and jQuery to build customizations and integrations",
+      "Translate client mock-ups into pixel perfect web experiences",
+      "Provid an expert opinion for clients on best practices with the Uberflip platform and web development",
+      "Provide technical expertise to client facing teams and provide project estimations"
+    ]
+  },
+  {
+    "company": "Hackeryou College of Technology",
+    "jobTitle": "Lead JavaScript Mentor",
+    "start": "26-9-2018",
+    "end": "present",
+    "description": [
+      "Work with lead instructor to help students develop an understanding of the JavaScript language, its features, and its history.",
+      "Provided additional resources and one-on-one mentorship outside of lecture",
+      "Write documents to provide to students that support their learning",
+      "Provide scope evaluation and guidance on student project proposals",
+      "Evaluate and give feedback on student projects"
+    ]
+  },
+  {
+    "company": "Hackeryou College of Technology",
+    "jobTitle": "Fullstack Mentor",
+    "start": "12-1-2018",
+    "end": "26-9-2018",
+    "description": [
+      "Work with lead instructor to help students develop an understanding of fullstack web development, utilizing the technologies MongoDB, Mongoose ORM, NodeJs, Express.js, and React",
+      "Provided additional resources and one-on-one mentorship outside of lecture"
+    ]
+  },
+  {
+    "company": "The Toronto Humane Society",
+    "jobTitle": "Web Application Developer (Freelance / Casual)",
+    "start": "01-05-2017",
+    "end": "present",
+    "description": [
+      "Independently design, develop, and maintain interal application for shelter management using React, MongoDB, NodeJS, and Express.js",
+      "Manage server aquisition, deployment, and maintence",
+      "Implement feature requests from staff to expand application functionality, building with future extensibility as a priority",
+      "Create versitile reporting functionality to display data in a accurate and visually appealing way"
+    ]
   }
 ]

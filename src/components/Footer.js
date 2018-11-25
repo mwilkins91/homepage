@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Logo from '../elements/Logo';
 import SocialIcon from '../elements/SocalIcon';
-
+import GreenText from '../elements/GreenText';
 
 const FooterBackground = styled.footer`
   background: ${props => props.theme.black};
@@ -24,10 +24,6 @@ const Author = styled.p`
     font-family: "Montserrat", sans-serif;
     font-size: 1.6rem;
     align-self: center;
-`;
-
-const GreenText = styled.span`
-  color: ${props => props.theme.green};
 `;
 
 const Flex = styled.div`

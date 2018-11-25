@@ -11,7 +11,7 @@ import theme from '../util/theme';
 const IndexPage = () => (
   <ThemeProvider theme={theme}>
     <Layout>
-      <Heading color="green">Hello</Heading>
+      <Heading color="green">About Me</Heading>
       <Profile />
       <Projects />
       <ContactMe />
