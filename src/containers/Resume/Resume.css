@@ -2,4 +2,7 @@
   #pageBody.resume>div:not(#resumeWrapper) {
     display: none;
   }
+  #pageBody {
+    -webkit-print-color-adjust: exact;
+  }
 }
