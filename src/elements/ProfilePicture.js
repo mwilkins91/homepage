@@ -21,6 +21,9 @@ const HexImg = styled(Hexagon)`
   max-width: 250px;
   flex-grow: 1;
   margin-right: 40px;
+  @media all and (max-width: 775px) {
+    margin-right: 0;
+  } 
   image {
     transform: translateX(-40px);
   }

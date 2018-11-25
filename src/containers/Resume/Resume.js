@@ -1,12 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
-import Logo from '../elements/Logo';
-import SocialIcon from '../elements/SocalIcon';
-import Content from '../elements/Content';
-import GreenText from '../elements/GreenText';
+import Logo from '../../elements/Logo';
+import SocialIcon from '../../elements/SocalIcon';
+import Content from '../../elements/Content';
+import GreenText from '../../elements/GreenText';
 import { StaticQuery, graphql } from 'gatsby';
-import ResumeInfoBlock from '../components/ResumeInfoBlock';
+import ResumeInfoBlock from '../../components/ResumeInfoBlock';
 import dayjs from 'dayjs';
+import './Resume.css';
 
 const ResumeTitle = styled.h1`
     color: ${props => props.theme.black};
@@ -99,16 +100,16 @@ const Resume = () => (
         <ResumeSectionHeading>Experience</ResumeSectionHeading>
         <ul>
           {workExperienceArr.sort(presentFirst).map(({node}) => (
-              <InfoBlockLi>
-                <ResumeInfoBlock key={node.id} data={node}/>
+              <InfoBlockLi key={node.id}>
+                <ResumeInfoBlock data={node}/>
               </InfoBlockLi>
             ))}
         </ul>
         <ResumeSectionHeading>Education</ResumeSectionHeading>
         <ul>
           {educationExperienceArr.map(({node}) => (
-              <InfoBlockLi>
-                <ResumeInfoBlock key={node.id} data={node}/>
+              <InfoBlockLi key={node.id}>
+                <ResumeInfoBlock data={node}/>
               </InfoBlockLi>
             ))}
         </ul>

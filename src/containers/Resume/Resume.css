@@ -1,0 +1,5 @@
+@media print {
+  #pageBody.resume>div:not(#resumeWrapper) {
+    display: none;
+  }
+}

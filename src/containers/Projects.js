@@ -20,6 +20,11 @@ const Wrapper = styled.div`
 const Flex = styled.div`
   display: flex;
   justify-content: space-between;
+  @media all and (max-width: 775px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  } 
 `;
 
 const Projects = () => (

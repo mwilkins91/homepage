@@ -7,6 +7,9 @@ import GreenText from '../elements/GreenText';
 const FooterBackground = styled.footer`
   background: ${props => props.theme.black};
   padding: 10px 0;
+  @media print {
+    display: none;
+  }
 `;
 
 const Wrapper = styled.div`
@@ -15,6 +18,11 @@ const Wrapper = styled.div`
   display: flex;
   font-family: ${props => props.theme.headerFont};
   justify-content: space-between;
+  @media all and (max-width: 775px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  } 
 `;
 
 const Author = styled.p`

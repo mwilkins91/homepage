@@ -13,6 +13,12 @@ const ProfileSection = styled.section`
 const FlexContainer = styled.div`
   display: flex;
   margin-top: 30px;
+  @media all and (max-width: 775px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 30px;
+  } 
 `;
 
 const Profile = () => (

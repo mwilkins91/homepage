@@ -6,6 +6,14 @@ import ContactIcon from '../elements/ContactIcon';
 const Flex = styled.div`
     display: flex;
     justify-content: space-between;
+    @media all and (max-width: 775px) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      * {
+        margin-bottom: 10px;
+      }
+    } 
 `;
 
 const Wrapper = styled.div`

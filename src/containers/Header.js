@@ -1,10 +1,17 @@
 import React from 'react';
 import Nav from '../components/nav';
+import styled from 'styled-components';
+
+const NoPrintHeader = styled.header`
+  @media print {
+    display: none;
+  }
+`;
 
 const Header = ({ siteTitle }) => (
-  <header>
+  <NoPrintHeader>
     <Nav />
-  </header>
+  </NoPrintHeader>
 );
 
 export default Header;

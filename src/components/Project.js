@@ -34,6 +34,10 @@ const VerticalColumn = styled.div`
   flex-direction: column;
   align-items: center;
   max-width: 33.333%;
+  @media all and (max-width: 775px) {
+    max-width: 100%;
+    padding: 0 30px;
+  } 
 `;
 
 const Spacer = styled.div`

@@ -3,7 +3,7 @@ import Layout from '../containers/layout';
 import { ThemeProvider } from 'styled-components';
 import theme from '../util/theme';
 import ResumeSideBar from '../containers/ResumeSideBar';
-import Resume from '../containers/Resume';
+import Resume from '../containers/Resume/Resume';
 import styled from 'styled-components';
 import Heading from '../components/Heading';
 
@@ -19,9 +19,9 @@ const Wrapper = styled.div`
 
 const resumePage = () => (
   <ThemeProvider theme={theme}>
-    <Layout>
+    <Layout className="resume">
       <Heading>Resume</Heading>
-      <Wrapper>
+      <Wrapper id="resumeWrapper">
         <ResumeSideBar />
         <Resume />
       </Wrapper>

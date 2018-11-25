@@ -11,6 +11,10 @@ const StyledLink = styled(Link)`
     color: #151515;
     text-decoration: none;
     transition: color 0.3s, background 0.3s;
+    @media all and (max-width: 775px) {
+        width: 100%;
+        text-align: center;
+    } 
 `;
 
 export default StyledLink;

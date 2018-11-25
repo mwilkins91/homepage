@@ -6,6 +6,11 @@ const StyledNav = styled.nav`
   display: flex;
   max-width: ${props => props.theme.wrapper};
   margin: 0 auto;
+  @media all and (max-width: 775px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  } 
 `;
 
 const activeStyles = {
