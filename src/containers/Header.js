@@ -1,6 +1,7 @@
 import React from 'react';
 import Nav from '../components/nav';
 import styled from 'styled-components';
+import HexHero from '../components/HexHero';
 
 const NoPrintHeader = styled.header`
   @media print {
@@ -10,6 +11,7 @@ const NoPrintHeader = styled.header`
 
 const Header = ({ siteTitle }) => (
   <NoPrintHeader>
+    <HexHero />
     <Nav />
   </NoPrintHeader>
 );

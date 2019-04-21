@@ -1,28 +1,16 @@
 import React from 'react';
+import Layout from '../containers/layout';
+import { ThemeProvider } from 'styled-components';
+import theme from '../util/theme';
+import ResumeSideBar from '../containers/ResumeSideBar';
+import Resume from '../containers/Resume/Resume';
 import styled from 'styled-components';
+import Heading from '../components/Heading';
+import Project from '../components/Project'
 import { StaticQuery, graphql } from 'gatsby';
 import SectionTitle from '../components/SectionTitle';
-import Project from '../components/Project';
-import { Link } from 'gatsby';
 
-const StyledLink = styled(Link)`
-    font-size: 1.6rem;
-    padding: 0 10px;
-    text-align: center;
-    font-family: "Open Sans",sans-serif;
-    margin: 16px 0;
-    line-height: normal;
-    text-align: center;
-    display: block;
-    &:hover, &:hover i {
-      color: ${props => props.theme.green};
-    }
-    i {
-      margin: 0 5px
-    }
-`;
-
-const ProjectsSection = styled.section`
+const Background = styled.section`
   background: ${props => props.theme.black};
   padding: 50px 0;
   * {
@@ -31,13 +19,18 @@ const ProjectsSection = styled.section`
 `;
 
 const Wrapper = styled.div`
+  display: flex;
   max-width: ${props => props.theme.wrapper};
   margin: 0 auto;
+  @media screen and (max-width: 775px) {
+    flex-direction: column;
+  }
 `;
 
 const Flex = styled.div`
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   @media all and (max-width: 775px) {
     flex-direction: column;
     align-items: center;
@@ -45,18 +38,15 @@ const Flex = styled.div`
   } 
 `;
 
-const Projects = () => (
-  <ProjectsSection id="projects">
-    <Wrapper>
-      <SectionTitle
-        title="Personal Projects"
-        subtitle="Some of my favorites"
-        backgroundColor="black"
-      />
+
+const projectsPage = () => (
+  <ThemeProvider theme={theme}>
+    <Layout className="projects">
+      <Heading>Projects</Heading>
       <StaticQuery
         query={graphql`
           query {
-            allProjectsJson {
+            allOngoingProjectsJson {
               edges {
                 node {
                   id
@@ -81,17 +71,25 @@ const Projects = () => (
           }
           `}
         render={data => {
-          const projects = data.allProjectsJson.edges;
+          const projects = data.allOngoingProjectsJson.edges;
           return (
-            <Flex>
-              {projects.map(({ node }) => <Project key={`project-${node.id}`} {...node} />)}
-            </Flex>
+            <Background>
+              <SectionTitle
+                title="Personal Projects"
+                subtitle="A sample of my ongoing projects"
+                backgroundColor="black"
+              />
+              <Wrapper>
+                <Flex>
+                  {projects.map(({ node }) => <Project key={`project-${node.id}`} {...node} />)}
+                </Flex>
+              </Wrapper>
+            </Background>
           );
         }}
       />
-      <StyledLink to="/projects#nav">More Projects<i class="fas fa-chevron-right"></i></StyledLink>
-    </Wrapper>
-  </ProjectsSection>
+    </Layout>
+  </ThemeProvider>
 );
 
-export default Projects;
+export default projectsPage;

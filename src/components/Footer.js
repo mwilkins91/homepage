@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Logo from '../elements/Logo';
-import SocialIcon from '../elements/SocalIcon';
+import SocialIcon from '../elements/SocialIcon';
 import GreenText from '../elements/GreenText';
 
 const FooterBackground = styled.footer`

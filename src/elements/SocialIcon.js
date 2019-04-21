@@ -30,11 +30,20 @@ const SocialIcon = ({ icon, color = props => props.theme.black, background = 'wh
     display: block;
     width: 35px;
     height: 35px;
+    min-width: 35px;
+    min-height: 35px;
     color: ${color};
     transition: color 0.3s;
     margin: 0 5px;
     position: relative;
     font-size: 1.6rem;
+    @media all and (max-width: 900px) {
+        width: 15px;
+        height: 15px;
+        min-width: 15px;
+        min-height: 15px;
+        font-size: 1rem;
+    }
   &:before {
     position: absolute;
     top: 50%;

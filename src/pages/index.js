@@ -7,7 +7,6 @@ import Projects from '../containers/Projects';
 import ContactMe from '../containers/ContactMe';
 import theme from '../util/theme';
 
-
 const IndexPage = () => (
   <ThemeProvider theme={theme}>
     <Layout>

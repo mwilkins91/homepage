@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Logo from '../../elements/Logo';
-import SocialIcon from '../../elements/SocalIcon';
+import SocialIcon from '../../elements/SocialIcon';
 import Content from '../../elements/Content';
 import GreenText from '../../elements/GreenText';
 import { StaticQuery, graphql } from 'gatsby';

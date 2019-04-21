@@ -19,12 +19,18 @@ const activeStyles = {
 };
 
 const Nav = () => (
-  <StyledNav>
+  <StyledNav id="nav">
     <NavLink
       to="/"
       activeStyle={activeStyles}
     >
       Home
+    </NavLink>
+    <NavLink
+      to="/projects"
+      activeStyle={activeStyles}
+    >
+      Projects
     </NavLink>
     <NavLink
       to="/resume"

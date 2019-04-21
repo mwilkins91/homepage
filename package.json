@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "author": "Mark Wilkins <contactme@markwilkins.co>",
   "dependencies": {
+    "canvas-hex-grid": "0.0.14",
     "dayjs": "^1.7.7",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^3.1.0",

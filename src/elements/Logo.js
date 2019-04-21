@@ -5,12 +5,18 @@ import styled from 'styled-components';
 
 
 
-const Logo = ({size = "80px"}) => {
+const Logo = ({size = "80px", mediaQuerySize = "80px"}) => {
   const WhiteCircleBackground = styled.div`
   position: relative;
   width: ${size};
   height: ${size};
   margin: 0 auto;
+  ${mediaQuerySize ? `
+    @media all and (max-width: 900px) {
+        width: ${mediaQuerySize};
+        height: ${mediaQuerySize};
+    }
+    ` : ''}
   &:after {
     content: "";
     border-radius: 50%;
@@ -26,6 +32,12 @@ const Logo = ({size = "80px"}) => {
     z-index: 2;
     width: ${size};
     height: ${size};
+    ${mediaQuerySize ? `
+    @media all and (max-width: 900px) {
+        width: ${mediaQuerySize};
+        height: ${mediaQuerySize};
+    }
+    ` : ''}
   }
 `;
 

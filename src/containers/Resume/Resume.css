@@ -1,7 +1,12 @@
+@page {
+  margin: 0;
+}
+
 @media print {
   #pageBody.resume>div:not(#resumeWrapper) {
     display: none;
   }
+
   #pageBody {
     -webkit-print-color-adjust: exact;
   }

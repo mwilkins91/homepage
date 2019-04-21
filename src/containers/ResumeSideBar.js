@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Logo from '../elements/Logo';
-import SocialIcon from '../elements/SocalIcon';
+import SocialIcon from '../elements/SocialIcon';
 import Content from '../elements/Content';
 
 const SideBar = styled.aside`
@@ -24,6 +24,11 @@ const SocialText = styled.p`
   color: white;
   font-size: 1.6rem;
   font-family: ${props => props.theme.contentFont};
+  max-width: 100%;
+  word-break: break-all;
+  @media all and (max-width: 900px) {
+      font-size: 1rem;
+    }
 `;
 
 const SocialLit = styled.ul`
@@ -43,6 +48,12 @@ const SideBarProfile = styled(Content)`
 const JobTitle = styled(SideBarHeading)`
   text-align: center;
   margin-bottom: 50px;
+`;
+
+const SidebarParagraph = styled.p`
+    @media all and (max-width: 900px) {
+      font-size: 1rem;
+    }
 `;
 
 const ResumeSideBar = () => (
@@ -65,7 +76,7 @@ const ResumeSideBar = () => (
     </SocialLit>
     <SideBarHeading> Profile </SideBarHeading>
     <SideBarProfile> 
-      <p>
+      <SidebarParagraph>
         I am a front-end web developer
         skilled in developing dynamic data
         driven applications using React,
@@ -73,8 +84,8 @@ const ResumeSideBar = () => (
         under pressure, and I consistently
         deliver high quality work as efficiently
         as possible.
-      </p>
-      <p>
+      </SidebarParagraph>
+      <SidebarParagraph>
         After first being exposed to, then
         subsequently working for over two
         years with Javascript in my role as
@@ -87,7 +98,7 @@ const ResumeSideBar = () => (
         languages and skills. I am excited to
         contribute all that I have learned to a
         new employer in the near future. 
-      </p>
+      </SidebarParagraph>
     </SideBarProfile>
   </SideBar>
 )
