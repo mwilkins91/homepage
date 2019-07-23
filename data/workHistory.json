@@ -6,11 +6,13 @@
     "end": "present",
     "description": [
       "Work as part of a scrum team to deliver new features and maintain both the front-end and back-end of Uberflip's main product",
+      "Plan, Prototype, and Develop modern Node.js based web applications and services (Express, Typescript, etc)",
+      "Develop new features and products using React, Web Components, and/or Vanilla Javascript",
       "Develop and maintain both internal and external Larevel and CakePHP based APIs",
       "Modernize a PHP-template and jQuery based application to an API powered React application",
-      "Convert existing enterprise scale web application's build process from Gulp to Webpack, implementing code-splitting, babel, bundling, and other modern built features.",
+      "Convert existing enterprise scale web application's build process from Gulp to Webpack, implementing code-splitting, babel, bundling, and other modern build features.",
       "Write migration scripts for both MySQL and MongoDB databases",
-      "Plan, Prototype, and Develop modern Node-js based application"
+      "Write and maintain TestNG (Java) Acceptance Tests, and Jest (Javascript and Typescript) unit tests"
     ]
   },
   {
@@ -70,7 +72,8 @@
       "Independently design, develop, and maintain interal application for shelter management using React, MongoDB, NodeJS, and Express.js",
       "Manage server aquisition, deployment, and maintence",
       "Implement feature requests from staff to expand application functionality, building with future extensibility as a priority",
-      "Create versitile reporting functionality to display data in a accurate and visually appealing way"
+      "Create versitile reporting functionality to display data in an accurate and visually appealing way",
+      "Set up and maintain error logging and monitoring services to ensure application stability"
     ]
   }
 ]

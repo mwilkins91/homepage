@@ -39,6 +39,9 @@ const SocialListItem = styled.li`
   display: flex;
   align-items: center;
   margin: 15px 0;
+  @media print {
+    white-space: nowrap;
+  }
 `;
 
 const SideBarProfile = styled(Content)`
@@ -77,27 +80,12 @@ const ResumeSideBar = () => (
     <SideBarHeading> Profile </SideBarHeading>
     <SideBarProfile> 
       <SidebarParagraph>
-        I am a front-end web developer
+        I am a Full-Stack Software Developer
         skilled in developing dynamic data
-        driven applications using React,
-        jQuery, or JavaScript. I work well
+        driven applications. I work well
         under pressure, and I consistently
         deliver high quality work as efficiently
-        as possible.
-      </SidebarParagraph>
-      <SidebarParagraph>
-        After first being exposed to, then
-        subsequently working for over two
-        years with Javascript in my role as
-        Shelter Supervisor at the Toronto
-        Humane Society, I fell in love with the
-        language. Ever since, I have been
-        working hard to expand my
-        understanding and improve my skills
-        with Javascript, and to learn new
-        languages and skills. I am excited to
-        contribute all that I have learned to a
-        new employer in the near future. 
+        as possible.I am passionate about programming, learning, and building new things.
       </SidebarParagraph>
     </SideBarProfile>
   </SideBar>
