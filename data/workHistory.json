@@ -1,18 +1,43 @@
 [
   {
+    "company": "The Working Group",
+    "title": "Senior Software Engineer (Full-stack & Mobile)",
+    "start": "2020-10-01",
+    "end": "present",
+    "description": [
+      "Build ETL pipelines for \"Big Data\" systems",
+      "Work with data-scientists to build robust and reusable analytic libraries using Python and Jupyter",
+      "Transform and enrich raw data using PySpark, Pandas, and other similar tools",
+      "Optimize databases for on-demand metric calculations (Redshift, Postgres, RDS)",
+      "Create various data visualization applications, using MatPlotLib, Plottly/Dash, Jupyter Lab, as well as bespoke React/D3 applications"
+    ]
+  },
+  {
+    "company": "The Working Group",
+    "title": "Senior Web Application Developer (Full-stack)",
+    "start": "2019-08-12",
+    "end": "2020-10-01",
+    "description": [
+      "Worked as part of a scrum team to develop web based applications for enterprise clients, ensuring timelines are met and a quality product is delivered",
+      "Worked as a team lead on projects requiring front-end expertise",
+      "Worked to build APIs and other backend services using various technologies and cloud providers (Azure, AWS, GCS; Docker, Kubernetes, Helm)",
+      "Architect front-end applications using component based libraries and frameworks (eg. React, Angular, Web-Components)"
+    ]
+  },
+  {
     "company": "Uberflip",
     "title": "Software Developer (Full-stack)",
     "start": "2018-02-22",
-    "end": "present",
+    "end": "2020-10-01",
     "description": [
-      "Work as part of a scrum team to deliver new features and maintain both the front-end and back-end of Uberflip's main product",
-      "Plan, Prototype, and Develop modern Node.js based web applications and services (Express, Typescript, etc)",
-      "Develop new features and products using React, Web Components, and/or Vanilla Javascript",
-      "Develop and maintain both internal and external Larevel and CakePHP based APIs",
-      "Modernize a PHP-template and jQuery based application to an API powered React application",
-      "Convert existing enterprise scale web application's build process from Gulp to Webpack, implementing code-splitting, babel, bundling, and other modern build features.",
-      "Write migration scripts for both MySQL and MongoDB databases",
-      "Write and maintain TestNG (Java) Acceptance Tests, and Jest (Javascript and Typescript) unit tests"
+      "Worked as part of a scrum team to deliver new features and maintain both the front-end and back-end of Uberflip's main product",
+      "Planed, Prototyped, and Developed modern Node.js based web applications and services (Express, Typescript, etc)",
+      "Developed new features and products using React, Web Components, and/or Vanilla Javascript",
+      "Developed and maintained both internal and external Laravel and CakePHP based APIs",
+      "Modernized a PHP-template and jQuery based application to an API powered React application",
+      "Converted existing enterprise scale web application's build process from Gulp to Webpack, implementing code-splitting, babel, bundling, and other modern build features",
+      "Wrote migration scripts for both MySQL and MongoDB databases",
+      "Wrote and maintain TestNG (Java) Acceptance Tests, and Jest (Javascript and Typescript) unit tests"
     ]
   },
   {
@@ -21,11 +46,11 @@
     "start": "2017-11-13",
     "end": "2018-02-22",
     "description": [
-      "Develop custom in house framework for custom front-end work ontop of the Uberflip platform",
-      "Develop, implement, and maintain Webpack based build process for the front-end team",
-      "Create tools to increase efficientcy of front-end team's work, reduce wait times for clients",
-      "Introduce code style guide, linting, and modern JavaScript to front-end team",
-      "Use CSS/Sass, JavaScript, and jQuery to build customizations and integrations"
+      "Developed custom in house framework for custom front-end work ontop of the Uberflip platform",
+      "Developed, implemented, and maintain Webpack based build process for the front-end team",
+      "Created tools to increase efficiency of front-end team's work, reduce wait times for clients",
+      "Introduced code style guide, linting, and modern JavaScript to front-end team",
+      "Used CSS/Sass, JavaScript, and jQuery to build customizations and integrations"
     ]
   },
   {
@@ -34,23 +59,37 @@
     "start": "2017-04-24",
     "end": "2017-11-13",
     "description": [
-      "Use CSS/Sass, JavaScript, and jQuery to build customizations and integrations",
-      "Translate client mock-ups into pixel perfect web experiences",
-      "Provid an expert opinion for clients on best practices with the Uberflip platform and web development",
-      "Provide technical expertise to client facing teams and provide project estimations"
+      "Used CSS/Sass, JavaScript, and jQuery to build customizations and integrations",
+      "Translated client mock-ups into pixel perfect web experiences",
+      "Provided an expert opinion for clients on best practices with the Uberflip platform and web development",
+      "Provided technical expertise to client facing teams and provide project estimations"
+    ]
+  },
+  {
+    "company": "Juno College of Technology",
+    "title": "Teaching Assistant",
+    "start": "2019-10-01",
+    "end": "2020-04-01",
+    "description": [
+      "Worked with lead instructor to help students develop an understanding of the JavaScript language, its features, and its history",
+      "Provided additional resources and one-on-one mentorship outside of lecture",
+      "Wrote documents to provide to students that support their learning",
+      "Provided scope evaluation and guidance on student project proposals",
+      "Evaluated and gave feedback on student projects"
     ]
   },
   {
     "company": "Hackeryou College of Technology",
     "title": "Lead JavaScript Mentor",
     "start": "2018-9-26",
-    "end": "present",
+    "end": "2019-10-01",
     "description": [
-      "Work with lead instructor to help students develop an understanding of the JavaScript language, its features, and its history.",
+      "Helped students develop an understanding of the JavaScript language, its features, and its history",
       "Provided additional resources and one-on-one mentorship outside of lecture",
-      "Write documents to provide to students that support their learning",
-      "Provide scope evaluation and guidance on student project proposals",
-      "Evaluate and give feedback on student projects"
+      "Wrote documents to provide to students that support their learning",
+      "Provided scope evaluation and guidance on student project proposals",
+      "Evaluated and give feedback on student projects",
+      "Aided other mentors and ensured that students had the best experience possible regardless of who they were working with"
     ]
   },
   {
@@ -59,20 +98,36 @@
     "start": "2018-1-12",
     "end": "2018-9-26",
     "description": [
-      "Work with lead instructor to help students develop an understanding of fullstack web development, utilizing the technologies MongoDB, Mongoose ORM, NodeJs, Express.js, and React",
+      "Worked with lead instructor to help students develop an understanding of fullstack web development, utilizing the technologies MongoDB, Mongoose ORM, NodeJs, Express.js, and React",
       "Provided additional resources and one-on-one mentorship outside of lecture"
+    ]
+  },
+  {
+    "company": "The Toronto Humane Society",
+    "title": "Senior Software Engineer (Part-Time / Casual)",
+    "start": "2019-10-01",
+    "end": "present",
+    "description": [
+      "Independently design, develop, and maintain internal application for shelter management using various technologies such as: React, Postgresql, Python, Flask, Pandas, and others",
+      "Manage server acquisition, deployment, and maintenance",
+      "Implement feature requests from staff to expand application functionality, building with future extensibility as a priority",
+      "Create versatile reporting functionality to display data in an accurate and visually appealing way",
+      "Set up and maintain error logging and monitoring services to ensure application stability",
+      "Design and implement micro services, and their remote environments",
+      "Ensure data integrity, security, and backups",
+      "Analyze and interpret data, build pipelines for data analysis and transformation"
     ]
   },
   {
     "company": "The Toronto Humane Society",
     "title": "Web Application Developer (Freelance / Casual)",
     "start": "2017-05-01",
-    "end": "present",
+    "end": "2019-10-01",
     "description": [
-      "Independently design, develop, and maintain interal application for shelter management using React, MongoDB, NodeJS, and Express.js",
-      "Manage server aquisition, deployment, and maintence",
+      "Independently designed, developed, and maintained internal application for shelter management using React, MongoDB, NodeJS, and Express.js",
+      "Manage server acquisition, deployment, and maintenance",
       "Implement feature requests from staff to expand application functionality, building with future extensibility as a priority",
-      "Create versitile reporting functionality to display data in an accurate and visually appealing way",
+      "Create versatile reporting functionality to display data in an accurate and visually appealing way",
       "Set up and maintain error logging and monitoring services to ensure application stability"
     ]
   }
